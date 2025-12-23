@@ -33,7 +33,7 @@ body {
   color: var(--texto);
 
 }
-
+/*Cabeçalho*/
 header {
   background-color: var(--destaque);
   color: var(--texto);
@@ -43,6 +43,7 @@ header {
   align-content: center; /*E deixou o conteudo centralizado no eixo vertical (cross axis)*/
 }
 
+/*lista dos icones*/
 #menu ul {
   list-style: none; /*Tira as bolinhas do link*/
   display: flex; /*Deixou ele flexivel, logo, ficou um do lado do outro*/
@@ -66,21 +67,66 @@ nav#menu a:hover{
   color: var(--destaque);
 }
 
+/*Conteudo*/
 main {
+  display: grid;
+  grid-template-columns: 1fr 90vw 1fr;
+  gap: 20px;
+  margin-top: 20px;
 
 }
+
+/*Descrição do perfil*/
 
 section#ficha {
   background-color: var(--fundo-card);
-  padding: 8px;
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
 }
 
-section#ficha img {
+
+/*FOto do perfil*/
+section#ficha img.foto {
   width: 200px;
   aspect-ratio: 1/1; /*tamanho*/
-  object-fit: cover;
-  overflow: hidden;
+  object-fit: cover; /*Controla como a imagem se encaixa dentro do espaço definido.*/
+  overflow: hidden; /*Define o que acontece com o conteúdo que ultrapassa o limite do elemento*/
   border-radius: 50%;
   border: 5px solid var(--fundo-card); /*Borda entre a foto e a ultima borda*/
   outline: 5px solid var(--destaque); /*Borda final*/
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
 }
+
+/*Nome*/
+section#ficha h1 {
+
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+/*Icones de social*/
+div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  gap: 1.5em; /*1em = 16px*/
+  margin-top: 10px;
+}
+
+div#social a {
+  color: var(--destaque);
+}
+
+div#social a:hover {
+  color: var(--destaque-inverso);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
