@@ -87,7 +87,7 @@ nav#menu a:hover {
 /*Conteudo*/
 main {
   display: grid;
-  grid-template-columns: 1fr 90vw 1fr;
+  grid-template-columns: auto 90vw auto;
   gap: 20px;
   margin-top: 20px;
 
@@ -306,6 +306,28 @@ footer a:hover {
 
 
 @media screen and (min-width: 768px) {
+
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+
+  }
+
+  section#ficha{
+    grid-column: 2 / 3; /*GRID-COLUMN-START e GRID-COLUMN-END*/
+    height: fit-content; /*Altura do conteudo*/
+    position: sticky;
+    top: 75px;
+
+
+  }
+
+  section#detalhes{
+
+    grid-column: 3 / 4;
+
+
+  }
+
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
