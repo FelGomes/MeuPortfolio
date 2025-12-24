@@ -25,6 +25,16 @@
 
 }
 
+body .escuro{
+  --fundo-principal: #222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333;
+  --destaque: rgb(86, 206, 86); 
+  --destaque-inverso: rgb(55, 116, 55); 
+  --fundo-card: #444;
+
+}
+
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -174,7 +184,7 @@ article>h2 {
 
 #skill-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
