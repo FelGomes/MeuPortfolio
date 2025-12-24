@@ -5,14 +5,14 @@ const body = document.body;
 const temasalvo = localStorage.getItem('tema');
 temaEscuro(temasalvo === 'escuro');
 
-// Função para alternar entre tema claro e escuro
+// Função para alternar entre ~tema claro e escuro
 function temaEscuro(tipo) {
   if (tipo == true) {
     body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    botao.innerHTML = '<i class="bi bi-brightness-high-fill fs-4"></i>';
   } else {
     body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = '<i class="bi bi-moon-fill fs-4"></i>';
   }
 }
 

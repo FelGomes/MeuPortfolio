@@ -49,6 +49,9 @@ header {
   /*Mudou a posição para o final da página*/
   align-content: center;
   /*E deixou o conteudo centralizado no eixo vertical (cross axis)*/
+  position: sticky; /*Posição da barra de icones*/
+  top: 0; /*Posição que vai ficar a barra*/
+  z-index: 1; /*sao camadas*/
 }
 
 /*lista dos icones*/
