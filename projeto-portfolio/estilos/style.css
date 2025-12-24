@@ -85,6 +85,10 @@ section#ficha {
   grid-column: 2;
 }
 
+#ficha > p{
+  text-align: justify;
+}
+
 
 /*FOto do perfil*/
 section#ficha img.foto {
@@ -144,3 +148,47 @@ article > h2 {
   color: var(--destaque);
 }
 
+#skill-container {
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 30px;
+}
+
+#skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#skill-container .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#skill-container .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skill-container .barra {
+  width: 100%;
+  background-color: var(--fundo-principal);
+  height: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+#skill-container .progresso {
+  height: 8px;
+  width: 100%;
+  background-color: var(--destaque);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 800px) {
+  #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
