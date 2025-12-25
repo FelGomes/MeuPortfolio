@@ -319,24 +319,7 @@ footer a:hover {
 }
 
 
-.campo-contato,
-.botao-contato {
-  width: 60%;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
 
-.botao-contato {
-  background-color: var(--destaque);
-}
-
-.campo-text {
-  width: 60%;
-  margin: 5px 0 15px 0;
-  height: 300px;
-}
-
-@media screen and (max-width: 768px) {
 
   .botao-contato,
   .campo-contato {
@@ -351,7 +334,7 @@ footer a:hover {
     height: 300px;
   }
 
-}
+
 
 
 
@@ -398,5 +381,23 @@ footer a:hover {
     max-width: 20%;
     max-height: 200px;
   }
+
+  .campo-contato,
+.botao-contato {
+  width: 60%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.botao-contato {
+  background-color: var(--destaque);
+}
+
+.campo-text {
+  width: 60%;
+  margin: 5px 0 15px 0;
+  height: 300px;
+}
+
 
 }
