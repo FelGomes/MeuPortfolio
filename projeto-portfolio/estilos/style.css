@@ -260,15 +260,16 @@ article>h2 {
   font-size: 1.5em;
 }
 
-#projeto-container {
+.projeto-container {
   display: flex;
   flex-direction: column-reverse;
   /* (para ficar do mais recente até o mais antigo);*/
   gap: 20px;
+  margin: 20px;
 }
 
 
-#projeto-container .projeto {
+.projeto-container .projeto {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -282,14 +283,14 @@ article>h2 {
 }
 
 
-#projeto-container .projeto:hover {
+.projeto-container .projeto:hover {
   border-color: var(--destaque);
   border-left-width: 15px;
   cursor: pointer;
 
 }
 
-#projeto-container .foto {
+.projeto-container .foto {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
@@ -321,18 +322,18 @@ footer a:hover {
 
 
 
-  .botao-contato,
-  .campo-contato {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 15px;
-  }
+.botao-contato,
+.campo-contato {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
 
-  .campo-text {
-    width: 100%;
-    margin: 5px 0 15px 0;
-    height: 300px;
-  }
+.campo-text {
+  width: 100%;
+  margin: 5px 0 15px 0;
+  height: 300px;
+}
 
 
 
@@ -367,37 +368,137 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  #projeto-container .projeto {
+  .projeto-container .projeto {
     flex-direction: row-reverse;
     justify-content: space-between;
+
   }
 
-  #projeto-container .projeto-info {
+  .projeto-container .projeto-info {
     max-width: 80%;
   }
 
-  #projeto-container .foto {
+  .projeto-container .foto {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
   }
 
   .campo-contato,
-.botao-contato {
-  width: 60%;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  .botao-contato {
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .botao-contato {
+    background-color: var(--destaque);
+  }
+
+  .campo-text {
+    width: 60%;
+    margin: 5px 0 15px 0;
+    height: 300px;
+  }
+
+
 }
 
-.botao-contato {
-  background-color: var(--destaque);
+
+
+/* tela de LABORHUB */
+.full {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
-.campo-text {
+.content {
+  background-color: var(--fundo-card);
   width: 60%;
-  margin: 5px 0 15px 0;
-  height: 300px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  height: auto;
 }
+
+.titulo,
+#images>h3 {
+  color: var(--destaque);
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
+
+
+}
+
+.titulo h2,
+#images h3 {
+  font-weight: 600;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+
+}
+
+.sobre {
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.sobre p {
+  text-indent: 30px;
+  line-height: 1.5;
+}
+
+.voltar {
+  position: absolute;
+  top: 60px;
+  left: 450px;
+}
+
+
+@media screen and (max-width: 950px) {
+  .content {
+    width: 95%;
+  }
+
+  .voltar {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    margin-bottom: 20px;
+
+  }
+
+}
+
+@media (min-width: 951px) and (max-width: 1450px) {
+
+  .content {
+    width: 95%;
+  }
+
+  .voltar {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    margin-bottom: 20px;
+
+  }
 
 
 }
