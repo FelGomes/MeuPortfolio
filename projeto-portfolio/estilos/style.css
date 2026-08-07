@@ -465,24 +465,22 @@ footer a:hover {
 }
 
 .voltar {
-  position: absolute;
-  top: 60px;
-  left: 450px;
+
 }
 
 
 @media screen and (max-width: 950px) {
-  .content {
+   .content {
     width: 95%;
   }
 
-  .voltar {
+  /* .voltar {
     position: absolute;
     top: 40px;
     left: 40px;
     margin-bottom: 20px;
 
-  }
+  } */ 
 
 }
 
@@ -492,13 +490,13 @@ footer a:hover {
     width: 95%;
   }
 
-  .voltar {
+  /* .voltar {
     position: absolute;
     top: 70px;
     left: 100px;
     margin-bottom: 20px;
 
-  }
+  } */
 
 
 }
